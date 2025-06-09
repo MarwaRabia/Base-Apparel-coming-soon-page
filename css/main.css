@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap");
+
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish: hsl(0, 6%, 24%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background: url("../images/bg-pattern-desktop.svg"),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-size: inherit;
+  background-position-x: 8rem;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.hero-mobile {
+  display: none;
+}
+
+.image-container {
+  height: 100vh;
+  float: right;
+}
+.d-flex-inline {
+  display: inline-flex;
+}
+.container {
+  padding: 0 12rem;
+  max-width: 55%;
+  height: auto;
+}
+.content {
+  margin-top: 5.5rem;
+}
+.content h1 {
+  color: var(--Dark-Grayish);
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  line-height: 3.5rem;
+  font-family: inherit;
+}
+.content h1 span {
+  display: block;
+}
+
+.text-pink {
+  color: var(--Desaturated-Red);
+  font-weight: 300;
+}
+.content p {
+  color: var(--Desaturated-Red);
+  margin-top: 1.2rem;
+  line-height: 1.8rem;
+}
+.logo {
+  margin-top: 3rem;
+}
+.image-container img.hero-desktop {
+  height: 100%;
+}
+.form-group {
+  margin-top: 2.5rem;
+  height: 3rem;
+  position: relative;
+}
+
+.form-group input {
+  border: 1px solid var(--Desaturated-Red);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  padding: 0.2rem 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+.form-group button {
+  background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  height: 100%;
+  width: 5rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 5px 20px 3px hsl(0, 80%, 86%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+input::placeholder {
+  color: var(--Desaturated-Red);
+}
+input:focus {
+  outline: none;
+  caret-color: var(--Desaturated-Red);
+}
+.form-group button:hover {
+  background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+.text-error {
+  margin-left: 1rem;
+}
+
+.icon-error {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5.8rem;
+  display: none;
+}
+footer {
+  margin-top: 1rem;
+}
+/* Mobile */
+@media (max-width: 1020px) {
+  .logo {
+    margin: 2rem 0;
+  }
+  .container {
+    margin: 0;
+    height: auto;
+    min-width: 100%;
+    padding: 0 1rem;
+  }
+  .clear-fix {
+    clear: both;
+  }
+  .content {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  .image-container {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-container img.hero-desktop {
+    display: none;
+  }
+
+  .image-container img.hero-mobile {
+    display: block;
+    width: 100%;
+  }
+}
