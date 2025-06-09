@@ -21,4 +21,4 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ## Deploying my project
 
-- [Live Site URL](https://order-summary-card-solution-ten.vercel.app/)
+- [Live Site URL](https://base-apparel-coming-soon-page-sand.vercel.app/)
